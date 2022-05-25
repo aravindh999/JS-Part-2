@@ -7,6 +7,9 @@
         <title>DOM</title>
         <script src="js7.js" type="module"></script>
         <style>
+            body {
+                margin: 0 auto;
+            }
             table {
                 margin: 30px;
                 display: inline;
@@ -19,9 +22,25 @@
             h1 {
                 text-align: center;
             }
+            input {
+                padding: 8px;
+                font-size: 20px;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
-        <h1>2022 Calender using Js DOM</h1>
+        <h1>
+            <input
+                type="number"
+                id="year"
+                min="1900"
+                max="2099"
+                step="1"
+                value="2022"
+            />
+            Calender using Js DOM
+        </h1>
+        <div id="cal"></div>
     </body>
 </html>
