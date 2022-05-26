@@ -1,0 +1,90 @@
+#bagua-table th {
+    text-align: center;
+    font-weight: bold;
+}
+td {
+    height: 150px;
+    width: 150px;
+}
+#bagua-table td {
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+#bagua-table .nw {
+    background: #999;
+}
+
+#bagua-table .n {
+    background: #03f;
+}
+
+#bagua-table .ne {
+    background: #ff6;
+}
+
+#bagua-table .w {
+    background: #ff0;
+}
+
+#bagua-table .c {
+    background: #60c;
+}
+
+#bagua-table .e {
+    background: #09f;
+}
+
+#bagua-table .sw {
+    background: #963;
+}
+
+#bagua-table .s {
+    background: #f60;
+}
+
+#bagua-table .se {
+    background: #0c3;
+}
+
+#bagua-table .highlight {
+    background: black;
+}
+#parent {
+    background: #99c0c3;
+    width: 160px;
+    height: 120px;
+    position: relative;
+}
+
+#child {
+    background: #ffde99;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+textarea {
+    height: 140px;
+    width: 300px;
+    display: block;
+}
+#ball {
+    margin: 30px;
+    background-color: black;
+    height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    color: white;
+    cursor: move;
+}
+span {
+    padding: 50px;
+}
