@@ -1,0 +1,11 @@
+.invalid {
+    border-color: red;
+}
+#error {
+    color: red;
+}
+input,
+select {
+    padding: 5px;
+    margin: 5px;
+}

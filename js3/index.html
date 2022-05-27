@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <form id="form1">
+            <fieldset name="userFields">
+                <legend>Form</legend>
+                <input id="login" type="text" placeholder="Name" />
+                <div id="logi"></div>
+                <br />
+                <input id="email" type="email" placeholder="Email" />
+                <div id="error"></div>
+                <br />
+                <select id="select" onchange="alert(this.value)">
+                    <option value="blues">Blues</option>
+                    <option value="rock">Rock</option>
+                    <option value="classic">Classic</option>
+                </select>
+                <div id="sel"></div>
+                <br />
+                <input type="text" id="text1" />
+            </fieldset>
+        </form>
+        <textarea id="area" style="width: 80%; height: 60px">
+            Selecting in this text updates values below.
+            </textarea
+        ><br />
+        From <input id="from" disabled /> – To <input id="to" disabled />
+        <div style="margin: 30px">
+            Selectable
+            <div id="elem">Unselectable</div>
+            Selectable
+        </div>
+        <div id="progress">Progress Indicator:</div>
+        <script>
+            elem.onselectstart = () => false;
+            let i = 0;
+            function count() {
+                do {
+                    i++;
+                    progress.innerHTML = "Progress Indicator: " + i;
+                } while (i % 1e3 != 0);
 
+                if (i < 1e7) {
+                    setTimeout(count);
+                }
+            }
+            count();
+        </script>
+        <script
+            defer
+            src="https://javascript.info/article/script-async-defer/long.js?speed=1"
+        ></script>
+
+        <script
+            async
+            src="https://javascript.info/article/script-async-defer/long.js"
+        ></script>
+        <script src="js9.js"></script>
+    </body>
+</html>
